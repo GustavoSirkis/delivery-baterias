@@ -4543,9 +4543,9 @@ input[type='button'].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
+  padding: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-left: 1rem;
+  margin-left: 4rem;
   font-size: 1.5rem;
   line-height: inherit;
   white-space: nowrap;
@@ -4584,11 +4584,9 @@ input[type='button'].btn-block {
   margin-right: 2rem;
 }
 
-@media (max-width: 321px) {
+@media (max-width: 769px) {
   .navbar-brand {
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    margin: 0 auto;
   }
 
   .navbar-logo-wrap {
@@ -10768,14 +10766,13 @@ h5,
   color: #fafafa;
 }
 .navbar-brand img {
-  width: 12rem;
+  width: 13rem;
   margin-right: 2rem;
 }
 
 @media (max-width: 426px) {
   .navbar-brand img {
     margin: 0 auto;
-    max-width: 16rem;
   }
 }
 
