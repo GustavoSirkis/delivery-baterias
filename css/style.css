@@ -16,7 +16,7 @@
   --green: #fdcf02;
   --teal: #20c997;
   --cyan: #17a2b8;
-  --white: #fff;
+  --white: #fafafa;
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #333399;
@@ -4525,7 +4525,6 @@ input[type='button'].btn-block {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1rem 3rem;
 }
 .navbar > .container,
 .navbar > .container-fluid {
@@ -4546,11 +4545,12 @@ input[type='button'].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
   line-height: inherit;
   white-space: nowrap;
 }
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
@@ -4584,12 +4584,19 @@ input[type='button'].btn-block {
   margin-right: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
   .navbar-logo-wrap {
     padding: 0;
     max-width: 33%;
   }
   .navbar-logo-wrap img {
+    margin-left: 1rem;
     max-width: 6rem;
   }
 }
@@ -4612,7 +4619,7 @@ input[type='button'].btn-block {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem auto;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -4633,7 +4640,7 @@ input[type='button'].btn-block {
 
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
+  width: 1em;
   height: 1.5em;
   vertical-align: middle;
   content: '';
@@ -4938,7 +4945,6 @@ input[type='button'].btn-block {
 .navbar-light .navbar-toggler {
   color: var(--blue);
   border-color: var(--blue);
-
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -10766,10 +10772,10 @@ h5,
   margin-right: 2rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 426px) {
   .navbar-brand img {
-    max-width: 10rem;
-    margin-right: 2rem;
+    margin: 0 auto;
+    max-width: 16rem;
   }
 }
 
@@ -10888,7 +10894,7 @@ h5,
   font-size: 2rem;
 }
 .hero-wrap .slider-text h1 {
-  color: #fff;
+  color: var(--white);
   line-height: 1.2;
   font-family: 'Poppins', Arial, sans-serif;
 }
@@ -11027,24 +11033,25 @@ h5,
   color: rgba(255, 255, 255, 0.9);
 }
 .owl-carousel.home-slider .slider-item .slider-text h1 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  letter-spacing: .5rem;
   font-weight: 700;
-  color: #fff;
-  line-height: 1;
+  color: var(--white);
+  line-height: 1.2;
   text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 991.98px) {
   .owl-carousel.home-slider .slider-item .slider-text h1 {
-    font-size: 1.8rem;
     letter-spacing: 3px;
+    /* line-height: 2.5rem; */
   }
 }
 .owl-carousel.home-slider .slider-item .slider-text h2 {
-  font-size: 16px;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: 'Poppins', Arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--white);
   display: inline-block;
   position: relative;
@@ -11432,13 +11439,13 @@ h5,
   color: rgba(255, 255, 255, 0.4);
 }
 .bg-intro .intro-box .icon {
-  width: 4rem;
-  height: 4rem;
+  width: 5.5rem;
+  height: 5.2rem;
   border-radius: 50%;
-  border: 1.5px solid var(--blue);
+  border: .185rem solid var(--blue);
 }
 .bg-intro .intro-box .icon i {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   color: var(--blue);
 }
 .bg-intro .btn-custom {
@@ -11462,8 +11469,7 @@ h5,
   margin: 0 auto;
 }
 .bg-intro h2 {
-  font-size: 18px;
-  margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
 .intro-btn {
@@ -11548,8 +11554,10 @@ h5,
   color: var(--blue);
 }
 
-.ftco-models .container h2 {
+.ftco-models .container h1 {
   color: var(--blue);
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
 }
 .ftco-map {
   overflow-x: hidden;
@@ -11848,12 +11856,12 @@ h5,
   color: rgba(255, 255, 255, 0.5);
 }
 .work h2 {
-  color: #fff;
+  color: var(--white);
   line-height: 1.2;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 .work h2 a {
-  color: #fff;
+  color: var(--white);
 }
 .work .desc {
   z-index: 1;
@@ -11946,6 +11954,12 @@ textarea.form-control {
   padding: 7em 0;
   position: relative;
 }
+
+.ftco-section h1 {
+  color: var(--blue);
+}
+
+
 @media (max-width: 767.98px) {
   .ftco-section {
     padding: 6em 0;
@@ -12038,9 +12052,9 @@ textarea.form-control {
 }
 .footer .ftco-footer-widget h2 {
   font-weight: normal;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 40px;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .footer .ftco-footer-widget ul li a {
@@ -12160,13 +12174,13 @@ textarea.form-control {
 }
 
 .heading-section h2 {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--blue)
 }
 @media (max-width: 767.98px) {
   .heading-section h2 {
-    font-size: 28px;
+    font-size: 1.5rem;
   }
 }
 
